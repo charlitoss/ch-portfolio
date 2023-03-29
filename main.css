@@ -1,0 +1,537 @@
+
+html {margin: 0;}
+body {
+    margin: 0 auto;
+    font-family: "Inter";
+    background-image: url('images/bg-texture.png'), url('images/bg-texture-hero.png');
+    background-repeat: repeat, no-repeat;
+    background-position: left top, center top;
+    background-size: auto, 750px;
+    background-color: #191925;
+    background-blend-mode: screen;
+    height: 100%;
+}
+
+header {
+    padding-top: 4rem;
+}
+
+/* Style for the navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8%;
+    color: #fff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 100%;
+}
+
+/* Style for the menu */
+.navbar .menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar .menu li {
+    margin-left: 2rem;
+    font-size: 18px;
+    list-style: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #EDEDEF;
+}
+
+.navbar .menu li .fa-brands {
+    color: #6584F4;
+    transition: all 0.1s ease-in-out;
+    transform-origin: center;
+}
+
+.navbar .menu li .fa-brands:hover {
+    transform: scale(1.2);
+    color: #B5C5FF;
+}
+
+/* Style for the hero section */
+.hero {
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10rem 8%;
+    animation: fadeInUp;
+    animation-duration: 1.1s;
+}
+
+.hero h1 {
+    font-family: "DM Serif Text";
+    font-size: 56px;
+    color: #fff;
+    line-height: 110%;
+    margin-bottom: 2rem;
+    letter-spacing: -.01em;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #CDCBD8;
+    margin-bottom: 4rem;
+    width: 36rem;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 180%;
+}
+
+.hero p span {
+    font-weight: 700;
+}
+
+.img-container {
+    background: #212131;
+}
+
+.hero ul {
+    display: flex;
+    align-items: flex-start;
+    color: #CDCBD8;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.hero li {
+    font-size: 16px;
+    font-style: normal;
+    margin: 0 20px 0 0;
+}
+
+.hero li i {
+    font-size: 16px;
+    padding: 10px;
+    color: #506098;
+}
+
+
+/* Style for the Case Studies Section */
+.case-studies {
+    display: grid;
+    box-sizing: content-box;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 4rem;
+    padding: 0 8% 8% 8%;
+}
+
+.grid-item {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-container {
+    position: relative;
+    margin-bottom: 1.2rem;
+    border-radius: 1rem;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(96, 64, 186, 0.4);
+    transition: opacity 0.2s ease-in-out;
+    border-radius: .75rem;
+}
+
+.grid-item:hover .overlay {
+    opacity: 1;
+}
+
+h3:hover + .img-container .overlay,
+p:hover + .img-container .overlay {
+    opacity: 1;
+}
+
+.img-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.grid-item h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #CDCBD8;
+    padding: 0 .5rem;
+}
+
+.grid-item p {
+    font-size: 16px;
+    font-weight:400;
+    color: #828290;
+    padding: .2rem .5rem;
+    line-height: 160%;
+}
+
+.grid-item a:hover h3,
+.grid-item a:hover p {
+    color: #6584F4;
+}
+
+/* Style for About Section */
+.about {
+    height: auto;
+    background-color: #212131;
+    padding: 6rem 8% 10rem 8%;
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    color: #CDCBD8;
+}
+
+.box {
+    flex-basis: 48%;
+    position: relative;
+}
+
+h2 {
+    font-family: "DM Serif Text";
+    font-size: 32px;
+    color: #EDEDEF;
+}
+
+.box p {
+    line-height: 160%;
+    padding: .5rem;
+}
+
+.p-space {
+    margin-bottom: 2rem;
+}
+
+/* Style for the Skills Section */
+.box-container-1::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 20%;
+    height: 2px;
+    background-color: #3B55B6;
+}
+
+.skills-container {
+    padding: 6rem 8%;
+    margin-top: -11rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.skillbox {
+    padding: 2rem;
+    background: #2D2B3B;
+    border-radius: .5rem;
+    color: #CDCBD8;
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+}
+
+.skillbox i {
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 28px;
+    color: #6584F4;
+}
+
+/* Style for the Other Projects Section */
+
+.otherprojects {
+    position: relative;
+}
+
+.otherprojects-container {
+    max-width: 40%;
+    margin: 4rem auto 4rem auto;
+}
+
+.star-shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.otherprojects-container h2 {
+    color: #6584F4;
+    margin-bottom: 2rem;
+    font-size: 40px;
+}
+
+.other-project {
+    padding: 3rem 0;
+    color: #CDCBD8;
+    border-bottom: 1px solid #2D2B3B;
+}
+
+.other-project:last-child {
+    border-bottom: none;
+}
+
+.other-project h2 {
+    color: #EDEDEF;
+    margin-bottom: 0;
+    font-size: 28px;
+}
+
+.timeline {
+    color: #828290;
+    font-size: 13px;
+    margin-bottom: 2rem;
+}
+
+.other-project p {
+    line-height: 160%;
+}
+
+/* Style for the Footer Section */
+footer {
+    width: 100%;
+    padding: 1.5rem 8%;
+}
+
+.footer-content {
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.connect {
+    position: relative;
+    padding: 4rem 0 2.5rem 0;
+}
+
+.connect::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 1px;
+    background-color: #2D2B3B;
+}
+
+.connect h2 {
+    color: #6584F4;
+    padding-bottom: .25rem;
+}
+
+.connect p {
+    color: #CDCBD8;
+}
+
+.footer-content ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: #6584F4;
+    width: auto;
+}
+
+.footer-content li i {
+    width: 100%;
+    font-size: 24px;
+    padding-bottom: 1.25rem;
+}
+
+.footer-content li {
+    font-size: 14px;
+    width: 15%;
+}
+
+.footer-content li:hover {
+    color: #B5C5FF;
+}
+
+.thankyou {
+    padding-top: 4rem;
+    color: #828290;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+
+    header {
+        padding-top: 2rem;
+    }
+
+    .logo img {
+        padding: 4px 0 0 0;
+    }
+
+    .hero {
+        padding: 6rem 8% 4rem 8%;  
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 16px;
+        width: 95%;
+        margin-bottom: 2rem;
+    }
+
+    .hero li {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .hero li i {
+        font-size: 20px;
+        width: 100%;
+        text-align: center;
+        padding: 8px;
+    }
+
+    .navbar .logo {
+        font-size: 18px;
+    }
+
+    .navbar .menu li {
+        font-size: 13px;
+        margin-left: 18px;
+    }
+
+    .case-studies {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .img-container {
+        margin-bottom: .75rem;
+        border-radius: .75rem;
+    }
+
+    .img-container img {
+        max-width: 100%;
+        height: auto; 
+    }
+
+    .overlay {
+        border-radius: .5rem;
+    }
+
+    .grid-item h3 {
+        font-size: 16px;
+        padding: 0 .25rem .25rem .25rem;
+    }
+        
+    .grid-item p {
+        font-size: 14px;
+        font-weight:400;
+        padding: .1rem .25rem 0 .25rem;
+        line-height: 140%;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .box h2 {
+        margin-bottom: 4rem;
+    }
+
+    .skills-container {
+        display: grid;
+        box-sizing: content-box;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .otherprojects-container {
+        max-width: 80%;
+        margin: 2rem auto 2rem auto;
+    }
+
+    .star-shape {
+        display: none;
+    }
+
+    .footer-content {
+        max-width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .footer-content li {
+        width: 25%;
+    }
+
+    .connect p {
+        color: #CDCBD8;
+        line-height: 160%;
+    }
+}
+
+/* Styles for screens wider than 768px */
+@media screen and (min-width: 768px) {
+
+    .hero {
+        padding: 8rem 8%;  
+    }
+
+    .case-studies {
+        gap: 2rem;
+    }
+
+    .box h2 {
+        font-size: 28px;
+        margin-bottom: 4rem;
+    }
+  }
