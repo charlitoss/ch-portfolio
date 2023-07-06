@@ -1,0 +1,310 @@
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+
+    header {
+        padding-top: 2rem;
+    }
+
+    .logo img {
+        padding: 4px 0 0 0;
+    }
+
+    .hero {
+        padding: 6rem 8% 4rem 8%;  
+    }
+
+    .hero p {
+        font-size: 16px;
+        width: 95%;
+        margin-bottom: 2rem;
+    }
+
+    .hero li {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .hero li i {
+        font-size: 20px;
+        width: 100%;
+        text-align: center;
+        padding: 8px;
+    }
+
+    .navbar .logo {
+        font-size: 18px;
+    }
+
+    .navbar .menu li {
+        font-size: 13px;
+        margin-left: 18px;
+        letter-spacing: 0;
+    }
+
+    .full-width-section {
+        padding: 24rem 8% 7rem 8%;
+    }
+
+    .case-studies {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 0 8% 28% 8%;
+    }
+
+    .cs-heading {
+        padding: 6rem 3rem;
+    }
+
+    .cs-heading h1 {
+        font-size: 44px;
+    }
+
+    .att-section {
+        background-position: 3rem 6rem;
+        background-size: 150%;
+    }
+    
+    .project-overview {
+        padding: 6rem 3rem;
+    }
+
+    .project-definition {
+        padding: 6rem 3rem;
+    }
+
+    .att-discovery-section {
+        padding: 6rem 3rem;
+    }
+
+    .att-handson {
+        padding: 6rem 3rem 14rem 3rem;
+        flex-direction: column;
+        gap: .5rem;
+    }
+
+    .overlap-container {
+        padding: 0 8%;
+        margin: -10rem 0 0 0;
+    }
+
+    .about h3 {
+        font-family: "DM Serif Text";
+        font-size: 28px;
+        color: #EDEDEF;
+        margin-bottom: 3rem;
+    }
+
+    .img-container {
+        margin-bottom: .75rem;
+        border-radius: .75rem;
+    }
+
+    .img-container img {
+        max-width: 100%;
+        height: auto; 
+    }
+
+    .overlay {
+        border-radius: .5rem;
+    }
+
+    .grid-item h5 {
+        font-size: 16px;
+        padding: 0 .25rem .25rem .25rem;
+    }
+        
+    .grid-item p {
+        font-size: 14px;
+        font-weight:400;
+        padding: .1rem .25rem 0 .25rem;
+        line-height: 140%;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .box {
+        flex-basis: content;
+    }
+
+    .skills-container {
+        display: grid;
+        box-sizing: content-box;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .otherprojects-container {
+        max-width: 80%;
+        margin: 2rem auto 2rem auto;
+    }
+
+    .otherprojects-container h2 {
+        font-size: 36px;
+    }
+
+    .otherprojects h3 {
+        font-family: "DM Serif Text";
+        font-size: 28px;
+        color: #EDEDEF;
+        margin-bottom: .2rem;
+
+    }
+
+    .star-shape {
+        display: none;
+    }
+
+    .footer-content {
+        max-width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .footer-content li {
+        width: 25%;
+    }
+
+    .connect p {
+        color: #CDCBD8;
+        line-height: 160%;
+    }
+
+/* ATT Case Study */
+
+    .images-container-3-2 {
+        display: block;
+        max-width: 100%;
+    }
+      
+    .left-column {
+        flex: auto;
+        width: 100%;
+        gap: 2rem;
+    }
+      
+    .right-column {
+        width: 100%;
+    }
+      
+    .left-column div, .right-column div {
+        padding-bottom: 62.5%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .images-container-2-2 {
+        flex-wrap: wrap;
+    }
+
+    .right-column-2-2 {
+        padding-top: 0;
+    }
+
+    .project-overview-container {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .problem-definition-section {
+        gap: 4rem;
+        flex-wrap: wrap;
+      }
+    
+    .images-container-2-2 {
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    .left-column-2-2, .right-column-2-2 {
+        width: 100%;
+        gap: 2rem;
+    }
+
+    .full-image {
+        margin: 0;
+        padding: 0;
+    }
+
+    .full-image img {
+        width: 150%;
+        padding: 0 0 0 2rem;
+    }
+
+    .att-scalable-section {
+        padding: 6rem 3rem 3rem 3rem;
+    }
+
+    .att-scalable-section img {
+        width: 400px;
+        margin: 3rem 0 0 6rem;
+    }
+
+    .project-results {
+        padding: 0 3rem 7rem 3rem;
+      }
+
+    .text-section {
+        padding: 3rem 3rem 4rem 3rem;
+    }
+
+    .cs-thankyou {
+        padding: 6rem 2rem;
+        background-position: center .7rem;
+    }
+
+    .cs-thankyou h3 {
+        font-size: 24px;
+    }
+
+/* Redis Case Study */
+
+    .redis-bg {
+        background-size: 80%;
+    }
+
+    .rd-story-section {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .rd-story-section img {
+        border-radius: 0;
+        margin: 8rem 0 4rem;
+        scale: 2;
+    }
+
+    .rd-disclaimer {
+        padding: 0 3rem 6rem 3rem;
+    }
+
+    .two-col-container {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .metric {
+        font-size: 40px;
+        line-height: 100%;
+    }
+
+}
+
+/* Styles for screens wider than 768px */
+@media screen and (min-width: 768px) {
+
+    .hero {
+        padding: 8rem 8%;  
+    }
+
+    .case-studies {
+        gap: 2rem;
+    }
+
+}
+
+
